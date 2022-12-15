@@ -1,0 +1,8 @@
+<div class="w3-padding general">
+    <div [hidden]="isHidden">
+        <img [src]="starwars.img" width="100px"/>
+        {{ starwars.name | uppercase }}
+        {{ starwars.description }}
+        <button class="w3-button w3-blue" (click)="onClick()"> Voir l'épisode</button>
+    </div>
+</div>

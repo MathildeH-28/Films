@@ -1,0 +1,6 @@
+<div class="w3-col w3-padding general">
+    <ng-container *ngFor="let letter of letters">
+        <a [routerLink]="['/Starwars', letter]">{{ letter }}</a>&nbsp;
+    </ng-container>
+    <button (click)="all()"> Toutes les épisodes</button>
+</div>
