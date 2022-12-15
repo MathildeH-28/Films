@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  logoPath: string = 'assets/logoSW.png'
+  items: Array<any> = new Array<any>()
 
   constructor() { }
 
