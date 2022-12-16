@@ -1,5 +1,27 @@
 <p>perso works!</p>
 
+<div class="w3-padding" style="height: 25%; background-color: orange;">
+
+    <span> <img [src] = "persoLuke.img" style="height: 25%; background-color: rgb(77, 255, 0);"></span>
+    <br>
+    <span>{{ persoLuke.name }}</span>
+
+    <br>
+
+    <span>{{ persoLuke.height }}</span>
+    <br>
+    <span>{{ persoLuke.mass }}</span>
+    <br>
+    <span>{{ persoLuke.hair_color }}</span>
+    <br>
+    <span>{{ persoLuke.skin_color }}</span>
+    <br>
+    <span>{{ persoLuke.eye_color }}</span>
+
+    <br>
+
+</div>
+
 <div class="w3-padding general">
     <div [hidden]="isHidden">
         {{ persoLuke.name | uppercase }}

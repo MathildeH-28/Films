@@ -11,9 +11,14 @@ export class DataService {
     { name: 'Luke Skywalker', height: '172', mass: '77', hair_color: 'blond', skin_color:'fair', eye_color: 'blue', gender:'male', homeworld:'https://swapi.dev/api/planets/1/', img: 'assets/luke.jpg' }
 ]
 
-  constructor(private httpClient: HttpClient) { }
+  constructor() { }
 
-  getPersoFilms(): Observable<any>{
+    getPersoLukeFilm(){
+      return this.persoLuke
+    }
+
+
+  /*getPersoFilms(): Observable<any>{
     return this.httpClient.get<any[]>('https://swapi.dev/api/people/1/').pipe(
       map( (data: any) => data['perso']),
            map( (tab: any[]) => {
@@ -41,5 +46,5 @@ export class DataService {
 
            )
         )
-}
+}*/
 }
